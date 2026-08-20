@@ -818,12 +818,12 @@ h3 { color: var(--ink); }
 .availability { color: var(--muted); }
 .availability span { background: #2e9b75; box-shadow: 0 0 0 5px rgba(46, 155, 117, 0.14); }
 
-.hero-panel { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; padding: 0.7rem; border: 1px solid rgba(20, 33, 61, 0.18); border-radius: 20px; background: rgba(255, 255, 255, 0.68); box-shadow: var(--shadow); }
+.hero-panel { width: min(100%, 780px); justify-self: end; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; padding: 0.9rem; border: 1px solid rgba(20, 33, 61, 0.18); border-radius: 20px; background: rgba(255, 255, 255, 0.68); box-shadow: var(--shadow); }
 .hero-panel::before { display: none; }
-.hero-panel div { min-height: 7.6rem; border: 1px solid rgba(20, 33, 61, 0.12); border-radius: 14px; background: rgba(255, 255, 255, 0.78); }
+.hero-panel div { min-height: 8.4rem; padding: 1.45rem; border: 1px solid rgba(20, 33, 61, 0.12); border-radius: 14px; background: rgba(255, 255, 255, 0.78); }
 .hero-panel div:hover { border-color: var(--teal); }
 .hero-panel strong { color: var(--green); }
-.hero-panel span { color: var(--muted); }
+.hero-panel span { color: var(--muted); font-size: 1rem; }
 .hero-identity { display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2rem); }
 .hero-identity h1 { margin: 0; }
 
