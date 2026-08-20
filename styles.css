@@ -906,11 +906,15 @@ h3 { color: var(--ink); }
 }
 
 .timeline-section { width: 100%; max-width: none; padding-right: max(1rem, calc((100% - 1240px) / 2)); padding-left: max(1rem, calc((100% - 1240px) / 2)); }
-.timeline article { background: rgba(16, 21, 42, 0.88); }
-.timeline::before { background: rgba(204, 210, 255, 0.22); }
-.timeline article::before { border-color: var(--teal); background: var(--paper); }
+.timeline-section { background: rgba(20, 33, 61, 0.035); }
+.timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; padding-left: 0; }
+.timeline article { min-height: 22rem; padding: 1.75rem; border-top: 4px solid var(--teal); background: #fff; }
+.timeline::before, .timeline article::before { display: none; }
+.timeline article h3 { max-width: 24ch; font-size: 1.45rem; }
+.timeline article p { font-size: 1rem; }
 .date { color: var(--teal); font-family: "DM Mono", monospace; }
 .experience-tags li { border-color: rgba(204, 210, 255, 0.2); color: #d4c5ff; }
+.experience-tags li { border-color: rgba(20, 122, 163, 0.24); color: var(--green); background: rgba(20, 122, 163, 0.06); }
 
 .skills-explorer { background: #fff; }
 .skill-tabs, .credential-tabs { border-bottom-color: var(--line); background: #eef2f0; }
@@ -948,6 +952,8 @@ h3 { color: var(--ink); }
   #projects, .timeline-section, .credentials, .certifications { padding-right: 1rem; padding-left: 1rem; }
   .project-card::before, .project-card.feature::before { height: 6rem; }
   .credentials > div { background: #fff; }
+  .timeline { grid-template-columns: 1fr; }
+  .timeline article { min-height: auto; }
 }
 
 .brand span { font-family: "DM Mono", monospace; font-size: 0.9rem; letter-spacing: -0.12em; }
