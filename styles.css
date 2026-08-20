@@ -824,7 +824,15 @@ h3 { color: #fff; }
 .hero-panel div:hover { border-color: var(--teal); }
 .hero-panel strong { color: #d5c5ff; }
 .hero-panel span { color: #b8bed9; }
-.profile-photo { border: 0; border-radius: 16px; }
+.profile-photo {
+  width: clamp(6rem, 14vw, 9rem);
+  aspect-ratio: 1;
+  justify-self: center;
+  border: 4px solid rgba(184, 156, 255, 0.9);
+  border-radius: 50%;
+  background: #282e56;
+  box-shadow: 0 0 0 8px rgba(168, 135, 255, 0.12), 0 18px 36px rgba(0, 0, 0, 0.28);
+}
 
 .split { width: min(1240px, calc(100% - 2rem)); border-top: 1px solid rgba(204, 210, 255, 0.24); }
 .section-heading { align-items: center; }
