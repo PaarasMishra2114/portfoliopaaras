@@ -998,9 +998,9 @@ h3 { color: var(--ink); }
 .screen-focus::before { z-index: 0; }
 .focus-heading { position: relative; z-index: 1; grid-column: 1 / -1; max-width: none !important; }
 .focus-heading h2 { white-space: nowrap; font-size: clamp(2.2rem, 4.4vw, 4.7rem); }
-.focus-art { position: relative; z-index: 1; min-height: 20rem; margin: 0; overflow: hidden; border-radius: 18px; background: #dce8e8; }
+.focus-art { position: relative; z-index: 1; min-height: 22rem; margin: 0; overflow: hidden; border-radius: 18px; background: #dce8e8; }
 .focus-art img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.8) contrast(1.04); }
-.focus-copy { position: relative; z-index: 1; align-self: center; max-width: none !important; margin: 0; color: var(--muted); font-size: 1.2rem; line-height: 1.65; }
+.focus-copy { position: relative; z-index: 1; align-self: center; max-width: none !important; margin: 0; color: var(--muted); font-size: 1.5rem; line-height: 1.6; }
 .screen-method { width: min(1120px, calc(100% - 2rem)); }
 .method-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
 .method-grid article { min-height: 15rem; padding: 1.5rem; border: 1px solid rgba(20, 33, 61, 0.14); border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
@@ -1023,7 +1023,8 @@ h3 { color: var(--ink); }
   .screen-focus > p { align-self: auto; }
   .screen-focus { display: block; padding: 1.5rem; }
   .focus-heading h2 { white-space: normal; }
-  .focus-art { min-height: 12rem; margin: 1.25rem 0; }
+  .focus-art { min-height: 14rem; margin: 1.25rem 0; }
+  .focus-copy { font-size: 1.25rem; }
   .screen-projects, .screen-certificates { min-height: auto; }
 }
 
