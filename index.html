@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Paaras Mishra, a CSE undergraduate focused on AI/ML engineering, RLHF, SFT, full-stack development, and edge AI systems."
+    />
+    <title>Paaras Mishra | AI/ML & Full-Stack Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Paaras Mishra home">
+        <span>PM</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#projects" data-nav-link>Projects</a>
+        <a href="#experience" data-nav-link>Experience</a>
+        <a href="#skills" data-nav-link>Skills</a>
+        <a href="#certifications" data-nav-link>Credentials</a>
+        <a href="#contact" data-nav-link>Contact</a>
+      </nav>
+      <a class="resume-link" href="assets/Paaras_Mishra_Resume.pdf" target="_blank" rel="noreferrer">
+        Resume
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">AI/ML engineer in progress - Full-stack builder</p>
+          <h1 id="hero-title">Paaras Mishra</h1>
+          <p class="lede">
+            Third-year CSE undergraduate building production-grade ML, IoT, and web systems. I work across
+            RLHF/SFT workflows, hallucination detection, computer vision, and scalable full-stack products.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button ghost" href="mailto:mishrapaaras@gmail.com">Email me</a>
+          </div>
+          <p class="availability"><span aria-hidden="true"></span> Open to AI/ML engineering and full-stack roles</p>
+        </div>
+        <div class="hero-panel" aria-label="Career highlights" data-reveal data-tilt>
+          <figure class="profile-photo">
+            <img src="profile-picture.jpg" alt="Paaras Mishra" />
+          </figure>
+          <div>
+            <strong data-count="4">4</strong>
+            <span>production-grade ML/IoT systems</span>
+          </div>
+          <div>
+            <strong data-count="2">2</strong>
+            <span>industry internships</span>
+          </div>
+          <div>
+            <strong data-count="10" data-suffix="+">10+</strong>
+            <span>cloud and AI certifications</span>
+          </div>
+          <div>
+            <strong data-count="150" data-suffix="+">150+</strong>
+            <span>LeetCode problems solved</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" data-reveal>
+        <div>
+          <p class="eyebrow">Current focus</p>
+          <h2>Building reliable AI systems and practical web products.</h2>
+        </div>
+        <p>
+          My work combines model evaluation, uncertainty signals, edge inference, and backend/frontend delivery.
+          I like projects where an idea becomes something measurable: faster attendance capture, better detection
+          metrics, cleaner APIs, or safer LLM outputs.
+        </p>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card feature" data-reveal data-tilt>
+            <div class="project-meta">
+              <span>2026</span>
+              <span>Python - PyTorch - Hugging Face</span>
+            </div>
+            <h3>ASR Hallucination Detection</h3>
+            <p>
+              Built a hybrid ASR plus language-model detector for hallucinated transcripts using confidence,
+              perplexity, token surprisal, repetition, and unique-token features.
+            </p>
+            <dl class="metrics">
+              <div><dt>Accuracy</dt><dd>85.0%</dd></div>
+              <div><dt>Precision</dt><dd>89.2%</dd></div>
+              <div><dt>ROC-AUC</dt><dd>81.3%</dd></div>
+            </dl>
+            <button class="project-toggle" type="button" aria-expanded="false" aria-controls="asr-details">
+              Project notes <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="asr-details" hidden>
+              <ul>
+                <li>Evaluated 665 labeled examples to identify unreliable transcript outputs.</li>
+                <li>Combined ASR confidence with language-model uncertainty and repetition signals.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <div class="project-meta">
+              <span>2025</span>
+              <span>OpenCV - Raspberry Pi - SQLite</span>
+            </div>
+            <h3>AI Attendance System</h3>
+            <p>
+              Deployed offline edge inference with Haar Cascade and LBPH recognition, reducing session recording
+              time from 5 minutes to 10 seconds with 92% identification accuracy.
+            </p>
+            <button class="project-toggle" type="button" aria-expanded="false" aria-controls="attendance-details">
+              Project notes <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="attendance-details" hidden>
+              <ul>
+                <li>Designed for offline use on Raspberry Pi with SQLite-backed attendance records.</li>
+                <li>Reduced manual attendance capture by 97% per session.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <div class="project-meta">
+              <span>2025</span>
+              <span>TensorFlow - CNN - FER-2013</span>
+            </div>
+            <h3>Real-Time Emotion Detection</h3>
+            <p>
+              Fine-tuned a seven-class CNN on 35,000+ images and built a smart-classroom signal layer that polls
+              affective state every 30 seconds.
+            </p>
+            <button class="project-toggle" type="button" aria-expanded="false" aria-controls="emotion-details">
+              Project notes <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="emotion-details" hidden>
+              <ul>
+                <li>Reached 24+ FPS for real-time feedback in a classroom setting.</li>
+                <li>Improved accuracy by 18% over the initial baseline model.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal data-tilt>
+            <div class="project-meta">
+              <span>2025</span>
+              <span>Scikit-learn - SMOTE - Random Forest</span>
+            </div>
+            <h3>Attendance Failure Prediction</h3>
+            <p>
+              Trained a classifier on 2,000+ student records to surface at-risk students 4+ weeks before attendance
+              deadlines, reducing false negatives by 23%.
+            </p>
+            <button class="project-toggle" type="button" aria-expanded="false" aria-controls="prediction-details">
+              Project notes <span aria-hidden="true">+</span>
+            </button>
+            <div class="project-details" id="prediction-details" hidden>
+              <ul>
+                <li>Used SMOTE to make at-risk examples more visible during model training.</li>
+                <li>Optimized for earlier intervention by prioritizing lower false-negative rates.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Industry practice</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article data-reveal>
+            <span class="date">Feb 2026 - May 2026</span>
+            <h3>Generative AI Engineer Intern, Ethara AI</h3>
+            <p>
+              Contributed to RLHF and supervised fine-tuning pipelines, curated preference datasets, and scored
+              model completions across safety, helpfulness, and coherence rubrics.
+            </p>
+            <ul class="experience-tags" aria-label="Key focus areas">
+              <li>RLHF</li><li>SFT</li><li>Model evaluation</li>
+            </ul>
+          </article>
+          <article data-reveal>
+            <span class="date">Nov 2025 - Jan 2026</span>
+            <h3>Full Stack Development Intern, Shyontech Software Technology India Pvt. Ltd.</h3>
+            <p>
+              Built multi-vendor e-commerce modules with React, Laravel, PHP, and MySQL, shipping 3+ REST API
+              endpoints and reducing average page load by about 30%.
+            </p>
+            <ul class="experience-tags" aria-label="Key focus areas">
+              <li>React</li><li>Laravel</li><li>REST APIs</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Toolbox</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-explorer" data-reveal>
+          <div class="skill-tabs" role="tablist" aria-label="Skill categories">
+            <button type="button" role="tab" id="tab-ai" aria-selected="true" aria-controls="panel-ai" data-skill-tab="ai">AI/ML</button>
+            <button type="button" role="tab" id="tab-web" aria-selected="false" aria-controls="panel-web" data-skill-tab="web" tabindex="-1">Web & Backend</button>
+            <button type="button" role="tab" id="tab-cloud" aria-selected="false" aria-controls="panel-cloud" data-skill-tab="cloud" tabindex="-1">Cloud & DevOps</button>
+            <button type="button" role="tab" id="tab-hardware" aria-selected="false" aria-controls="panel-hardware" data-skill-tab="hardware" tabindex="-1">Hardware</button>
+          </div>
+          <section class="skill-panel" id="panel-ai" role="tabpanel" aria-labelledby="tab-ai" data-skill-panel="ai">
+            <p class="skill-kicker">Model building and evaluation</p>
+            <h3>AI/ML</h3>
+            <p>Python, PyTorch, TensorFlow, Scikit-learn, Hugging Face Transformers, OpenCV, RLHF, SFT, Pandas, NumPy</p>
+          </section>
+          <section class="skill-panel" id="panel-web" role="tabpanel" aria-labelledby="tab-web" data-skill-panel="web" hidden>
+            <p class="skill-kicker">Product delivery</p>
+            <h3>Web & Backend</h3>
+            <p>JavaScript, React.js, PHP, Laravel, Django, MySQL, REST APIs, HTML5, CSS3, CRUD, XML</p>
+          </section>
+          <section class="skill-panel" id="panel-cloud" role="tabpanel" aria-labelledby="tab-cloud" data-skill-panel="cloud" hidden>
+            <p class="skill-kicker">Infrastructure and developer workflow</p>
+            <h3>Cloud & DevOps</h3>
+            <p>AWS EC2, S3, Lambda, Google Cloud Platform, Git, Linux, CI/CD</p>
+          </section>
+          <section class="skill-panel" id="panel-hardware" role="tabpanel" aria-labelledby="tab-hardware" data-skill-panel="hardware" hidden>
+            <p class="skill-kicker">Edge systems</p>
+            <h3>Hardware</h3>
+            <p>Raspberry Pi, edge inference, IoT sensor integration, SQLite, offline pipelines</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="section credentials" data-reveal>
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>Rustamji Institute of Technology</h2>
+          <p>B.Tech in Computer Science & Engineering - CGPA 7.87 - Sept 2023 - Present</p>
+        </div>
+        <div>
+          <p class="eyebrow">Certifications & leadership</p>
+          <p>
+            Oracle Agentic AI Foundations Associate, six AWS Academy credentials, Claude certifications, Google Cloud
+            badges, and Campus Mantri at GeeksforGeeks.
+          </p>
+        </div>
+      </section>
+
+      <section class="section certifications" id="certifications" aria-labelledby="certifications-title">
+        <div class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">Evidence of learning</p>
+            <h2 id="certifications-title">Credentials</h2>
+          </div>
+          <p class="certifications-summary">Credentials organized by provider, with room for future Google badges from Credly.</p>
+        </div>
+
+        <div class="credential-tabs" role="tablist" aria-label="Credential categories" data-reveal>
+          <button type="button" role="tab" aria-selected="true" data-credential-tab="all">All</button>
+          <button type="button" role="tab" aria-selected="false" data-credential-tab="aws">AWS Academy</button>
+          <button type="button" role="tab" aria-selected="false" data-credential-tab="google">Google badges</button>
+          <button type="button" role="tab" aria-selected="false" data-credential-tab="claude">Claude</button>
+          <button type="button" role="tab" aria-selected="false" data-credential-tab="oracle">Oracle</button>
+          <button type="button" role="tab" aria-selected="false" data-credential-tab="other">Other</button>
+        </div>
+
+        <div class="certificate-grid" aria-live="polite">
+          <h3 class="certificate-group-title" data-credential-group="aws">AWS Academy</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Academy Graduate - Cloud Architecting" data-certificate-image="AWS%20Cloud%20Architecture.jpg" aria-label="Preview AWS Academy Graduate Cloud Architecting certificate">
+              <img src="AWS%20Cloud%20Architecture.jpg" alt="AWS Academy Graduate Cloud Architecting certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS Cloud Architecting</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Academy Graduate - Cloud Developing" data-certificate-image="AWS%20Cloud%20Developing.jpg" aria-label="Preview AWS Academy Graduate Cloud Developing certificate">
+              <img src="AWS%20Cloud%20Developing.jpg" alt="AWS Academy Graduate Cloud Developing certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS Cloud Developing</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Academy Graduate - Cloud Foundations" data-certificate-image="AWS%20Cloud%20foundation.jpg" aria-label="Preview AWS Academy Graduate Cloud Foundations certificate">
+              <img src="AWS%20Cloud%20foundation.jpg" alt="AWS Academy Graduate Cloud Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS Cloud Foundations</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Data Center Technician" data-certificate-image="AWS%20DATA%20CENTER%20TECHNICIAN.jpg" aria-label="Preview AWS Data Center Technician certificate">
+              <img src="AWS%20DATA%20CENTER%20TECHNICIAN.jpg" alt="AWS Data Center Technician certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS Data Center Technician</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Generative AI Foundations" data-certificate-image="AWS%20Gen%20AI%20foundations.jpg" aria-label="Preview AWS Generative AI Foundations certificate">
+              <img src="AWS%20Gen%20AI%20foundations.jpg" alt="AWS Generative AI Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS Generative AI Foundations</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AWS Machine Learning Foundations" data-certificate-image="AWS%20ML%20FOUNDATION.jpg" aria-label="Preview AWS Machine Learning Foundations certificate">
+              <img src="AWS%20ML%20FOUNDATION.jpg" alt="AWS Machine Learning Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AWS ML Foundations</p>
+          </article>
+          <h3 class="certificate-group-title" data-credential-group="other">Other credentials</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Generative AI Certification" data-certificate-image="GEN%20AI.jpg" aria-label="Preview Generative AI certificate">
+              <img src="GEN%20AI.jpg" alt="Generative AI certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Generative AI</p>
+          </article>
+          <h3 class="certificate-group-title" data-credential-group="google">Google badges</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Google Cloud Foundations" data-certificate-image="Google%20cloud%20certification%20foundation.jpg" aria-label="Preview Google Cloud Foundations certificate">
+              <img src="Google%20cloud%20certification%20foundation.jpg" alt="Google Cloud Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Google Cloud Foundations</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Google Cloud Jams" data-certificate-image="Jams%20google%20cloud.jpg" aria-label="Preview Google Cloud Jams certificate">
+              <img src="Jams%20google%20cloud.jpg" alt="Google Cloud Jams certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Google Cloud Jams</p>
+          </article>
+          <p class="badge-placeholder">Credly Google badges will be added here.</p>
+          <h3 class="certificate-group-title" data-credential-group="other">Other credentials</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="community" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Student Ambassador - LetsUpgrade" data-certificate-image="Lets%20Upgrade%20Student%20Ambassador.jpg" aria-label="Preview LetsUpgrade Student Ambassador certificate">
+              <img src="Lets%20Upgrade%20Student%20Ambassador.jpg" alt="LetsUpgrade Student Ambassador certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>LetsUpgrade Student Ambassador</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="community" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Web Development - Udemy" data-certificate-image="Web%20Development%20Udemy.jpg" aria-label="Preview Web Development Udemy certificate">
+              <img src="Web%20Development%20Udemy.jpg" alt="Web Development Udemy certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Web Development, Udemy</p>
+          </article>
+          <h3 class="certificate-group-title" data-credential-group="claude">Claude certifications</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="AI Fluency Framework and Foundations" data-certificate-image="AI%20Fluency%20Framework%20and%20Foundations.png" aria-label="Preview AI Fluency Framework and Foundations certificate">
+              <img src="AI%20Fluency%20Framework%20and%20Foundations.png" alt="AI Fluency Framework and Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>AI Fluency Framework and Foundations</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Claude 101" data-certificate-image="Claude%20101.png" aria-label="Preview Claude 101 certificate">
+              <img src="Claude%20101.png" alt="Claude 101 certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Claude 101</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Claude Code 101" data-certificate-image="Claude%20Code%20101.png" aria-label="Preview Claude Code 101 certificate">
+              <img src="Claude%20Code%20101.png" alt="Claude Code 101 certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Claude Code 101</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Claude Code in Action" data-certificate-image="Claude%20Code%20in%20Action.png" aria-label="Preview Claude Code in Action certificate">
+              <img src="Claude%20Code%20in%20Action.png" alt="Claude Code in Action certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Claude Code in Action</p>
+          </article>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Introduction to Claude Cowork" data-certificate-image="introduction-to-claude-cowork.png" aria-label="Preview Introduction to Claude Cowork certificate">
+              <img src="introduction-to-claude-cowork.png" alt="Introduction to Claude Cowork certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Introduction to Claude Cowork</p>
+          </article>
+          <h3 class="certificate-group-title" data-credential-group="oracle">Oracle certification</h3>
+          <article class="certificate-card" data-certificate data-certificate-category="technical" data-reveal>
+            <button type="button" data-certificate-open data-certificate-title="Oracle Agentic AI Foundations" data-certificate-image="oracle.png" aria-label="Preview Oracle Agentic AI Foundations certificate">
+              <img src="oracle.png" alt="Oracle Agentic AI Foundations certificate for Paaras Mishra" loading="lazy" />
+              <span>Preview</span>
+            </button>
+            <p>Oracle Agentic AI Foundations</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" data-reveal>
+        <p class="eyebrow">Let's build</p>
+        <h2>Open to AI/ML engineering and full-stack web roles.</h2>
+        <div class="contact-links">
+          <a href="mailto:mishrapaaras@gmail.com">mishrapaaras@gmail.com</a>
+          <a href="tel:+917827355055">+91 78273 55055</a>
+          <a href="https://linkedin.com/in/paarasmishra" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/PaarasMishra2114" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://leetcode.com/PaarasMishra" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-dialog-title">
+      <div class="certificate-dialog-toolbar">
+        <p id="certificate-dialog-title"></p>
+        <button type="button" class="dialog-close" id="certificate-dialog-close" aria-label="Close certificate preview">&times;</button>
+      </div>
+      <img id="certificate-dialog-image" src="" alt="" />
+    </dialog>
+
+    <footer class="footer">
+      <span>&copy; <span id="year"></span> Paaras Mishra</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
