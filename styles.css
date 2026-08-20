@@ -758,14 +758,14 @@ h3 {
 }
 
 body {
-  background: radial-gradient(circle at 12% 8%, rgba(124, 53, 218, 0.6), transparent 31rem), linear-gradient(125deg, #090b1c 0%, #1a0b3b 46%, #3f1685 100%);
+  background: radial-gradient(circle at 12% 8%, rgba(145, 124, 224, 0.26), transparent 31rem), linear-gradient(125deg, #12152b 0%, #20254a 48%, #4d477c 100%);
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
 }
 
 body::before {
   z-index: 0;
-  opacity: 0.55;
+  opacity: 0.26;
   background-image: repeating-radial-gradient(ellipse at 12% 20%, transparent 0 16px, rgba(121, 218, 255, 0.14) 17px 18px, transparent 19px 32px), repeating-radial-gradient(ellipse at 94% 12%, transparent 0 20px, rgba(168, 135, 255, 0.14) 21px 22px, transparent 23px 40px);
   background-size: 420px 360px, 440px 420px;
   mask-image: linear-gradient(to bottom, black, transparent 85%);
@@ -791,7 +791,7 @@ a { color: inherit; }
 .resume-link { color: #fff; }
 .resume-link:hover, .button:hover { border-color: var(--teal); background: rgba(123, 219, 255, 0.12); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.26); }
 
-.hero { position: relative; width: min(1240px, calc(100% - 2rem)); min-height: 760px; padding-top: 5rem; }
+.hero { position: relative; width: min(1240px, calc(100% - 2rem)); min-height: 700px; padding-top: 5rem; }
 .hero::after {
   position: absolute;
   top: 4rem;
@@ -808,17 +808,17 @@ a { color: inherit; }
 .hero-copy::before { width: 4px; background: var(--teal); box-shadow: 0 0 20px var(--teal); }
 .eyebrow { color: var(--teal); font-family: "DM Mono", monospace; font-size: 0.75rem; letter-spacing: 0.08em; }
 h1, h2, h3 { font-weight: 700; }
-h1 { max-width: 9ch; color: #fff; font-size: clamp(4.8rem, 11vw, 9.2rem); letter-spacing: -0.05em; line-height: 0.82; text-transform: uppercase; }
-h2 { color: #fff; font-size: clamp(2.7rem, 5vw, 5rem); letter-spacing: -0.04em; }
+h1 { max-width: 9ch; color: #fff; font-size: clamp(4.4rem, 9vw, 7.6rem); letter-spacing: -0.035em; line-height: 0.86; text-transform: uppercase; }
+h2 { color: #fff; font-size: clamp(2.5rem, 4.5vw, 4.4rem); letter-spacing: -0.03em; }
 h3 { color: #fff; }
 .lede, .split > p { color: #c2c6dc; }
 .button.primary { border-color: #a887ff; background: #7748d3; }
 .button.primary:hover { background: #9a70ef; }
-.button.ghost { color: #fff; }
+.button.ghost { border-color: rgba(207, 211, 255, 0.3); background: rgba(255, 255, 255, 0.06); color: #fff; }
 .availability { color: #c2c6dc; }
 .availability span { background: #70e8c1; box-shadow: 0 0 0 5px rgba(112, 232, 193, 0.14); }
 
-.hero-panel { gap: 0.7rem; padding: 1rem; border: 1px solid rgba(197, 200, 255, 0.25); border-radius: 24px; background: rgba(12, 15, 38, 0.74); box-shadow: var(--shadow); }
+.hero-panel { gap: 0.7rem; padding: 1rem; border: 1px solid rgba(197, 200, 255, 0.25); border-radius: 24px; background: rgba(24, 29, 58, 0.76); box-shadow: var(--shadow); }
 .hero-panel::before { border: 1px solid rgba(123, 219, 255, 0.4); border-radius: 24px; }
 .hero-panel div { border: 1px solid rgba(206, 210, 255, 0.16); border-radius: 14px; background: rgba(255, 255, 255, 0.04); }
 .hero-panel div:hover { border-color: var(--teal); }
@@ -832,10 +832,10 @@ h3 { color: #fff; }
 
 #projects { width: 100%; max-width: none; padding-right: max(1rem, calc((100% - 1240px) / 2)); padding-left: max(1rem, calc((100% - 1240px) / 2)); background: rgba(6, 8, 22, 0.3); }
 .project-grid { gap: 1.25rem; }
-.project-card, .timeline article, .skills-explorer, .credentials > div, .contact { border-color: rgba(204, 210, 255, 0.16); border-radius: 18px; background: #10152a; box-shadow: var(--shadow); }
+.project-card, .timeline article, .skills-explorer, .credentials > div, .contact { border-color: rgba(204, 210, 255, 0.2); border-radius: 18px; background: #171d3a; box-shadow: var(--shadow); }
 .project-card { position: relative; overflow: hidden; padding: 1.5rem; }
 .project-card::before { display: block; height: 8rem; margin: -1.5rem -1.5rem 1.4rem; background: linear-gradient(135deg, #6742cc, #3f68c9); content: ""; }
-.project-card.feature { border-color: rgba(168, 135, 255, 0.35); background: #11162d; }
+.project-card.feature { border-color: rgba(168, 135, 255, 0.35); background: #1a2142; }
 .project-card.feature::before { height: 11rem; background: linear-gradient(135deg, #a15ceb, #315ebd 72%); }
 .project-meta { color: #9fa8cc; font-family: "DM Mono", monospace; }
 .project-meta span + span::before { color: var(--coral); }
@@ -853,7 +853,7 @@ h3 { color: #fff; }
 .date { color: var(--teal); font-family: "DM Mono", monospace; }
 .experience-tags li { border-color: rgba(204, 210, 255, 0.2); color: #d4c5ff; }
 
-.skills-explorer { background: #10152a; }
+.skills-explorer { background: #171d3a; }
 .skill-tabs, .credential-tabs { border-bottom-color: rgba(204, 210, 255, 0.18); background: #0b0f22; }
 .skill-tabs button, .credential-tabs button { color: #9da6c8; }
 .skill-tabs button:hover, .skill-tabs button[aria-selected="true"], .credential-tabs button:hover, .credential-tabs button[aria-selected="true"] { border-bottom-color: var(--teal); background: rgba(123, 219, 255, 0.08); color: #fff; }
@@ -887,4 +887,50 @@ h3 { color: #fff; }
   #projects, .timeline-section, .credentials, .certifications { padding-right: 1rem; padding-left: 1rem; }
   .project-card::before, .project-card.feature::before { height: 6rem; }
   .credentials > div { background: #f8f7ff; }
+}
+
+.brand span { font-family: "DM Mono", monospace; font-size: 0.9rem; letter-spacing: -0.12em; }
+.editorial-screen { position: relative; min-height: 78vh; display: flex; flex-direction: column; justify-content: center; }
+.screen-intro, .screen-focus, .screen-experience, .screen-skills, .screen-method, .screen-community { overflow: hidden; }
+.screen-intro::before, .screen-focus::before, .screen-method::before, .screen-community::before {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid rgba(128, 226, 255, 0.24);
+  border-radius: 50%;
+  background: repeating-radial-gradient(ellipse, transparent 0 12px, rgba(128, 226, 255, 0.12) 13px 14px, transparent 15px 25px);
+  content: "";
+  pointer-events: none;
+}
+.screen-intro::before { top: 8%; left: -8rem; }
+.screen-focus::before { right: -6rem; bottom: 5%; }
+.screen-method::before { top: 10%; right: -7rem; }
+.screen-community::before { bottom: -6rem; left: -5rem; }
+.screen-projects, .screen-certificates { min-height: 88vh; }
+.screen-projects .section-heading, .screen-certificates .section-heading { max-width: 920px; margin-right: auto; margin-left: auto; }
+.screen-projects .project-grid, .screen-certificates .certificate-grid { width: min(1120px, 100%); margin: 0 auto; }
+.screen-focus { border-top: 0; }
+.screen-focus > div:first-child { max-width: 640px; }
+.screen-focus > p { max-width: 680px; align-self: flex-end; }
+.screen-method { width: min(1120px, calc(100% - 2rem)); }
+.method-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.method-grid article { min-height: 15rem; padding: 1.5rem; border: 1px solid rgba(204, 210, 255, 0.2); border-radius: 18px; background: rgba(23, 29, 58, 0.88); }
+.method-grid span { color: var(--coral); font-family: "DM Mono", monospace; }
+.method-grid h3 { margin-top: 3.5rem; color: #fff; font-size: 1.45rem; }
+.method-grid p { margin: 0; color: #b7bdd6; }
+.screen-community { width: min(1120px, calc(100% - 2rem)); }
+.screen-community h2 { max-width: 760px; }
+.community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+.community-grid p { margin: 0; padding: 1.5rem; border-left: 3px solid var(--teal); background: rgba(255, 255, 255, 0.07); color: #d1d5e7; font-size: 1.15rem; }
+.screen-education { min-height: 66vh; }
+.screen-certificates { min-height: 90vh; }
+.screen-contact { min-height: 68vh; }
+
+@media (max-width: 760px) {
+  .editorial-screen { min-height: auto; }
+  .method-grid, .community-grid { grid-template-columns: 1fr; }
+  .method-grid article { min-height: auto; }
+  .method-grid h3 { margin-top: 2rem; }
+  .screen-focus > p { align-self: auto; }
+  .screen-projects, .screen-certificates { min-height: auto; }
 }

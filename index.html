@@ -18,8 +18,8 @@
   <body>
     <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Paaras Mishra home">
-        <span>PM</span>
+      <a class="brand" href="#top" aria-label="Paaras Mishra developer home">
+        <span aria-hidden="true">&lt;/&gt;</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#projects" data-nav-link>Projects</a>
@@ -34,7 +34,7 @@
     </header>
 
     <main id="top">
-      <section class="hero section" aria-labelledby="hero-title">
+      <section class="hero section editorial-screen screen-intro" aria-labelledby="hero-title">
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">AI/ML engineer in progress - Full-stack builder</p>
           <h1 id="hero-title">Paaras Mishra</h1>
@@ -71,7 +71,7 @@
         </div>
       </section>
 
-      <section class="section split" data-reveal>
+      <section class="section split editorial-screen screen-focus" data-reveal>
         <div>
           <p class="eyebrow">Current focus</p>
           <h2>Building reliable AI systems and practical web products.</h2>
@@ -83,7 +83,7 @@
         </p>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section editorial-screen screen-projects" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Selected work</p>
           <h2>Projects</h2>
@@ -180,7 +180,7 @@
         </div>
       </section>
 
-      <section class="section timeline-section" id="experience">
+      <section class="section timeline-section editorial-screen screen-experience" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Industry practice</p>
           <h2>Experience</h2>
@@ -211,7 +211,7 @@
         </div>
       </section>
 
-      <section class="section" id="skills">
+      <section class="section editorial-screen screen-skills" id="skills">
         <div class="section-heading">
           <p class="eyebrow">Toolbox</p>
           <h2>Skills</h2>
@@ -246,7 +246,22 @@
         </div>
       </section>
 
-      <section class="section credentials" data-reveal>
+      <section class="section editorial-screen screen-method" data-reveal aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A practical loop</p>
+            <h2 id="method-title">Build. Measure. Improve.</h2>
+          </div>
+          <p class="certifications-summary">The thread connecting my ML experiments, edge systems, and web products.</p>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3>Frame the signal</h3><p>Turn a vague product or model problem into measurable questions, useful features, and a clear success metric.</p></article>
+          <article><span>02</span><h3>Ship a working slice</h3><p>Build the smallest useful pipeline, from REST endpoint to offline Raspberry Pi inference, then test it in its real environment.</p></article>
+          <article><span>03</span><h3>Read the evidence</h3><p>Use evaluation, error analysis, latency, and user feedback to decide what deserves another iteration.</p></article>
+        </div>
+      </section>
+
+      <section class="section credentials editorial-screen screen-education" data-reveal>
         <div>
           <p class="eyebrow">Education</p>
           <h2>Rustamji Institute of Technology</h2>
@@ -261,7 +276,7 @@
         </div>
       </section>
 
-      <section class="section certifications" id="certifications" aria-labelledby="certifications-title">
+      <section class="section certifications editorial-screen screen-certificates" id="certifications" aria-labelledby="certifications-title">
         <div class="section-heading" data-reveal>
           <div>
             <p class="eyebrow">Evidence of learning</p>
@@ -409,7 +424,16 @@
         </div>
       </section>
 
-      <section class="section contact" id="contact" data-reveal>
+      <section class="section editorial-screen screen-community" data-reveal aria-labelledby="community-title">
+        <p class="eyebrow">Beyond the build</p>
+        <h2 id="community-title">I make technical ideas easier to share.</h2>
+        <div class="community-grid">
+          <p>As Campus Mantri at GeeksforGeeks, I ran 5+ technical workshops and mentored 150+ students across DSA and competitive programming.</p>
+          <p>As a Student Ambassador at LetsUpgrade and Internshala, I helped connect learners with practical opportunities, communities, and next steps.</p>
+        </div>
+      </section>
+
+      <section class="section contact editorial-screen screen-contact" id="contact" data-reveal>
         <p class="eyebrow">Let's build</p>
         <h2>Open to AI/ML engineering and full-stack web roles.</h2>
         <div class="contact-links">
