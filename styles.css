@@ -938,6 +938,8 @@ h3 { color: var(--ink); }
 .badge-placeholder { border-color: #c4b6ec; color: #68647f; }
 
 .contact { width: min(1240px, calc(100% - 2rem)); background: var(--navy); }
+.contact h2, .contact p, .contact .eyebrow { color: #fff !important; opacity: 1; }
+.contact .eyebrow { color: #8bd8e8; }
 .contact-links a { border-color: rgba(255, 255, 255, 0.25); background: rgba(255, 255, 255, 0.08); color: #fff; }
 .contact-links a:hover { border-color: var(--teal); }
 .footer { border-top-color: rgba(204, 210, 255, 0.2); color: #aeb5d2; }
@@ -988,7 +990,7 @@ h3 { color: var(--ink); }
 .screen-community { width: min(1120px, calc(100% - 2rem)); }
 .screen-community h2 { max-width: 760px; }
 .community-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
-.community-grid p { margin: 0; padding: 1.5rem; border-left: 3px solid var(--teal); background: rgba(255, 255, 255, 0.07); color: #d1d5e7; font-size: 1.15rem; }
+.community-grid p { margin: 0; padding: 1.5rem; border-left: 3px solid var(--teal); background: #fff; color: var(--ink); font-size: 1.15rem; }
 .screen-education { min-height: 66vh; }
 .screen-certificates { min-height: 90vh; }
 .screen-contact { min-height: 68vh; }
