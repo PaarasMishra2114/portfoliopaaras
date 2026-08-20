@@ -834,9 +834,14 @@ h3 { color: #fff; }
 .project-grid { gap: 1.25rem; }
 .project-card, .timeline article, .skills-explorer, .credentials > div, .contact { border-color: rgba(204, 210, 255, 0.2); border-radius: 18px; background: #171d3a; box-shadow: var(--shadow); }
 .project-card { position: relative; overflow: hidden; padding: 1.5rem; }
-.project-card::before { display: block; height: 8rem; margin: -1.5rem -1.5rem 1.4rem; background: linear-gradient(135deg, #6742cc, #3f68c9); content: ""; }
+.project-card::before { display: block; height: 8rem; margin: -1.5rem -1.5rem 1.4rem; background: linear-gradient(135deg, #6742cc, #3f68c9); background-size: 180% 180%; content: ""; animation: project-gradient 8s ease-in-out infinite alternate; }
+.project-card::after { position: absolute; top: 0; right: 0; left: 0; height: 8rem; background: repeating-linear-gradient(90deg, transparent 0 26px, rgba(255, 255, 255, 0.1) 27px 28px, transparent 29px 56px); content: ""; opacity: 0.45; pointer-events: none; animation: project-scan 5s linear infinite; }
 .project-card.feature { border-color: rgba(168, 135, 255, 0.35); background: #1a2142; }
-.project-card.feature::before { height: 11rem; background: linear-gradient(135deg, #a15ceb, #315ebd 72%); }
+.project-card.feature::before { height: 11rem; background: linear-gradient(135deg, #a15ceb, #315ebd 72%); background-size: 180% 180%; }
+.project-card.feature::after { height: 11rem; background: repeating-radial-gradient(ellipse at 18% 50%, transparent 0 9px, rgba(255, 255, 255, 0.16) 10px 11px, transparent 12px 22px); animation: project-wave 6s ease-in-out infinite; }
+.project-card:nth-child(2)::after { background: repeating-linear-gradient(0deg, transparent 0 12px, rgba(112, 232, 193, 0.16) 13px 14px, transparent 15px 28px); animation: project-pulse 3.5s ease-in-out infinite; }
+.project-card:nth-child(3)::after { background: radial-gradient(circle at 25% 50%, rgba(255, 141, 210, 0.45) 0 2px, transparent 3px), radial-gradient(circle at 75% 50%, rgba(123, 219, 255, 0.45) 0 2px, transparent 3px); background-size: 28px 28px, 34px 34px; animation: project-grid-shift 7s linear infinite; }
+.project-card:nth-child(4)::after { background: repeating-linear-gradient(90deg, transparent 0 18px, rgba(243, 201, 105, 0.22) 19px 24px, transparent 25px 42px); transform-origin: bottom; animation: project-bars 4s ease-in-out infinite alternate; }
 .project-meta { color: #9fa8cc; font-family: "DM Mono", monospace; }
 .project-meta span + span::before { color: var(--coral); }
 .project-card p, .timeline p, .credentials p, .contact p, .skill-panel > p:last-child { color: #b7bdd6; }
@@ -845,6 +850,36 @@ h3 { color: #fff; }
 .project-toggle { color: var(--teal); }
 .project-details { border-top-color: rgba(204, 210, 255, 0.16); }
 .project-details li::marker { color: var(--coral); }
+
+@keyframes project-gradient {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+@keyframes project-scan {
+  from { transform: translateX(-12%); }
+  to { transform: translateX(12%); }
+}
+
+@keyframes project-wave {
+  0%, 100% { transform: scale(1) translateX(-2%); opacity: 0.32; }
+  50% { transform: scale(1.08) translateX(3%); opacity: 0.72; }
+}
+
+@keyframes project-pulse {
+  0%, 100% { transform: scaleY(0.75); opacity: 0.2; }
+  50% { transform: scaleY(1.15); opacity: 0.72; }
+}
+
+@keyframes project-grid-shift {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 56px 28px, -68px 34px; }
+}
+
+@keyframes project-bars {
+  from { transform: scaleY(0.58); opacity: 0.32; }
+  to { transform: scaleY(1); opacity: 0.82; }
+}
 
 .timeline-section { width: 100%; max-width: none; padding-right: max(1rem, calc((100% - 1240px) / 2)); padding-left: max(1rem, calc((100% - 1240px) / 2)); }
 .timeline article { background: rgba(16, 21, 42, 0.88); }
