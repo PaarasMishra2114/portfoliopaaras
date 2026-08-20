@@ -925,11 +925,12 @@ h3 { color: var(--ink); }
 .skill-panel h3 { color: var(--ink); }
 .skill-kicker { color: var(--coral); font-family: "DM Mono", monospace; }
 
-.credentials { width: 100%; max-width: none; grid-template-columns: repeat(3, minmax(0, 1fr)); padding-right: max(1rem, calc((100% - 1240px) / 2)); padding-left: max(1rem, calc((100% - 1240px) / 2)); }
+.credentials { width: 100%; max-width: none; grid-template-columns: repeat(2, minmax(0, 1fr)); padding-right: max(1rem, calc((100% - 1240px) / 2)); padding-left: max(1rem, calc((100% - 1240px) / 2)); }
 .education-heading { grid-column: 1 / -1; }
 .education-heading h2 { margin: 0; }
-.education-card { overflow: hidden; }
-.education-card img { display: block; width: 100%; height: 9rem; object-fit: cover; margin: -1.25rem -1.25rem 1.25rem; width: calc(100% + 2.5rem); }
+.education-card { display: grid; grid-template-columns: minmax(0, 1fr) 38%; overflow: hidden; padding: 0 !important; }
+.education-card img { grid-column: 2; grid-row: 1; display: block; width: 100%; height: 100%; min-height: 12rem; object-fit: cover; margin: 0; }
+.education-copy { grid-column: 1; grid-row: 1; padding: 1.25rem; align-self: center; }
 .education-card h2 { font-size: clamp(1.45rem, 2.4vw, 2.2rem); }
 .credentials > div { background: #fff; color: var(--ink); }
 .credentials > div h2, .credentials > div p { color: var(--ink); }
@@ -964,6 +965,8 @@ h3 { color: var(--ink); }
   .project-card.feature-secondary .project-art { height: 8rem; }
   .credentials > div { background: #fff; }
   .credentials { grid-template-columns: 1fr; }
+  .education-card { display: block; }
+  .education-card img { width: 100%; height: 9rem; min-height: 0; }
   .timeline { grid-template-columns: 1fr; }
   .timeline article { min-height: auto; }
 }
