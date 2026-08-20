@@ -124,6 +124,45 @@ a:focus-visible {
 .resume-link:hover,
 .footer a:hover { color: var(--green); }
 
+.resume-content {
+  width: min(980px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 6rem) 0;
+}
+
+.resume-intro {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.resume-intro h1 { max-width: none; font-size: clamp(3.2rem, 8vw, 6rem); }
+.resume-intro > p:not(.eyebrow) { color: var(--muted); }
+.resume-summary { max-width: 760px; font-size: 1.1rem; }
+
+.resume-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-section h2 {
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.resume-entry + .resume-entry { margin-top: 1.75rem; }
+.resume-entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.resume-entry-heading span { flex: 0 0 auto; color: var(--muted); font-size: 0.9rem; font-weight: 700; }
+.resume-meta { margin: 0.35rem 0; color: var(--teal); font-size: 0.9rem; font-weight: 700; }
+.resume-entry p, .resume-entry li, .resume-columns p { color: var(--muted); }
+.resume-entry ul { margin: 0.7rem 0 0; padding-left: 1.2rem; }
+.resume-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.resume-columns strong, .resume-section > p strong { color: var(--ink); }
+
+@media (max-width: 600px) {
+  .resume-entry-heading, .resume-columns { display: block; }
+  .resume-entry-heading span { display: block; margin-top: 0.35rem; }
+}
+
 .nav a:hover::after,
 .nav a[aria-current="true"]::after { transform: scaleX(1); transform-origin: left center; }
 
