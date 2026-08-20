@@ -1047,6 +1047,7 @@ body.resume-page > * { z-index: auto; }
 .resume-page .resume-content { max-width: 940px; padding: 4rem 0 5rem; }
 .resume-page .resume-intro { border-bottom: 2px solid #111; }
 .resume-page .eyebrow { color: #111; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.08em; }
+.resume-page .resume-section > .eyebrow { margin-bottom: 1rem; font-size: 1.15rem; font-weight: 800; letter-spacing: 0.12em; }
 .resume-page h1, .resume-page h2, .resume-page h3 { color: #111; }
 .resume-page .resume-intro h1 { font-size: clamp(3rem, 8vw, 5.8rem); letter-spacing: -0.04em; }
 .resume-page .resume-intro > p:not(.eyebrow),
@@ -1056,6 +1057,7 @@ body.resume-page > * { z-index: auto; }
 .resume-page .resume-summary { font-size: 1.05rem; }
 .resume-page .resume-section { border-bottom: 1px solid #ddd; }
 .resume-page .resume-meta { color: #111; }
+.resume-page .resume-entry-heading h2 { font-size: 1.55rem; }
 .resume-page .resume-entry-heading span { color: #555; }
 .resume-page .resume-columns strong,
 .resume-page .resume-section > p strong { color: #111; }
