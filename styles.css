@@ -994,9 +994,13 @@ h3 { color: var(--ink); }
 .screen-projects, .screen-certificates { min-height: 88vh; }
 .screen-projects .section-heading, .screen-certificates .section-heading { max-width: 920px; margin-right: auto; margin-left: auto; }
 .screen-projects .project-grid, .screen-certificates .certificate-grid { width: min(1120px, 100%); margin: 0 auto; }
-.screen-focus { border-top: 0; }
-.screen-focus > div:first-child { max-width: 640px; }
-.screen-focus > p { max-width: 680px; align-self: flex-end; }
+.screen-focus { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem 2rem; width: min(1240px, calc(100% - 2rem)); padding: clamp(2rem, 5vw, 4.5rem); border: 1px solid rgba(20, 33, 61, 0.14); border-radius: 24px; background: rgba(255, 255, 255, 0.82); box-shadow: var(--shadow); }
+.screen-focus::before { z-index: 0; }
+.focus-heading { position: relative; z-index: 1; grid-column: 1 / -1; max-width: none !important; }
+.focus-heading h2 { white-space: nowrap; font-size: clamp(2.2rem, 4.4vw, 4.7rem); }
+.focus-art { position: relative; z-index: 1; min-height: 18rem; margin: 0; overflow: hidden; border-radius: 18px; background: #dce8e8; }
+.focus-art img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(0.8) contrast(1.04); }
+.focus-copy { position: relative; z-index: 1; align-self: center; max-width: none !important; margin: 0; color: var(--muted); font-size: 1.08rem; }
 .screen-method { width: min(1120px, calc(100% - 2rem)); }
 .method-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
 .method-grid article { min-height: 15rem; padding: 1.5rem; border: 1px solid rgba(20, 33, 61, 0.14); border-radius: 18px; background: #fff; box-shadow: var(--shadow); }
@@ -1017,6 +1021,9 @@ h3 { color: var(--ink); }
   .method-grid article { min-height: auto; }
   .method-grid h3 { margin-top: 2rem; }
   .screen-focus > p { align-self: auto; }
+  .screen-focus { display: block; padding: 1.5rem; }
+  .focus-heading h2 { white-space: normal; }
+  .focus-art { min-height: 12rem; margin: 1.25rem 0; }
   .screen-projects, .screen-certificates { min-height: auto; }
 }
 
