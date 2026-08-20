@@ -934,3 +934,50 @@ h3 { color: #fff; }
   .screen-focus > p { align-self: auto; }
   .screen-projects, .screen-certificates { min-height: auto; }
 }
+
+body.resume-page {
+  background: #fff;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.resume-page::before { display: none; }
+body.resume-page > * { z-index: auto; }
+
+.resume-page .site-header {
+  position: sticky;
+  border-bottom: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.96);
+  color: #111;
+  box-shadow: none;
+}
+
+.resume-page .brand {
+  border-color: #111;
+  background: #111;
+  color: #fff;
+  box-shadow: none;
+}
+
+.resume-page .brand:hover { background: #333; }
+.resume-page .resume-link { border-color: #111; background: #fff; color: #111; }
+.resume-page .resume-link:hover { border-color: #111; background: #111; color: #fff; }
+.resume-page .resume-content { max-width: 940px; padding: 4rem 0 5rem; }
+.resume-page .resume-intro { border-bottom: 2px solid #111; }
+.resume-page .eyebrow { color: #111; font-family: Arial, Helvetica, sans-serif; letter-spacing: 0.08em; }
+.resume-page h1, .resume-page h2, .resume-page h3 { color: #111; }
+.resume-page .resume-intro h1 { font-size: clamp(3rem, 8vw, 5.8rem); letter-spacing: -0.04em; }
+.resume-page .resume-intro > p:not(.eyebrow),
+.resume-page .resume-entry p,
+.resume-page .resume-entry li,
+.resume-page .resume-columns p { color: #333; }
+.resume-page .resume-summary { font-size: 1.05rem; }
+.resume-page .resume-section { border-bottom: 1px solid #ddd; }
+.resume-page .resume-meta { color: #111; }
+.resume-page .resume-entry-heading span { color: #555; }
+.resume-page .resume-columns strong,
+.resume-page .resume-section > p strong { color: #111; }
+
+@media (max-width: 600px) {
+  .resume-page .resume-content { padding-top: 2.5rem; }
+}
