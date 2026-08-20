@@ -831,10 +831,10 @@ h3 { color: var(--ink); }
   width: clamp(6rem, 14vw, 9rem);
   aspect-ratio: 1;
   flex: 0 0 auto;
-  border: 4px solid rgba(184, 156, 255, 0.9);
+  border: 4px solid #718b9b;
   border-radius: 50%;
   background: #282e56;
-  box-shadow: 0 0 0 8px rgba(168, 135, 255, 0.12), 0 18px 36px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 0 8px rgba(113, 139, 155, 0.16), 0 18px 36px rgba(20, 33, 61, 0.2);
 }
 
 .split { width: min(1240px, calc(100% - 2rem)); border-top: 1px solid rgba(204, 210, 255, 0.24); }
